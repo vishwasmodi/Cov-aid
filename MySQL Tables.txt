@@ -1,0 +1,57 @@
+create database Cov_aid;
+use Cov_aid;
+
+create table user
+(
+    Name varchar(1000) ,
+    Age int ,
+    Sex varchar(1) ,
+    Location varchar(2000) ,
+    Contact_Number varchar(20) ,
+    E_Mail varchar(200) ,
+    User_Name varchar(2000) ,
+    Password varchar(2000)
+);
+
+
+create table jobs
+(
+       Job_Position varchar(2000) ,
+       Company_Name varchar(2000) ,
+       Salary varchar(2000) ,
+       Qualifications varchar(2000) ,
+       Location varchar(2000) ,
+       Note_Captions varchar(2000) ,
+       Working_Hours int ,
+        User_Name varchar(2000)
+);
+
+create table Plasma
+(
+    Blood_Group varchar(2000) ,
+    Date_Recovered Date ,
+    Address varchar(2000) ,
+    User_Name varchar(2000)
+);
+
+create table Doctors
+(
+    Field varchar(2000) ,
+    Available_Between varchar(2000) ,
+    Fees int ,
+    User_Name varchar(2000)
+);
+
+create table Donors
+(
+    Donor_Name varchar(2000) ,
+    User_Name varchar(2000)  ,
+    Amount int
+);
+
+create table analyzer(
+    State varchar(40),
+    Cases int,
+    Recovered int,
+    Deaths int
+);
